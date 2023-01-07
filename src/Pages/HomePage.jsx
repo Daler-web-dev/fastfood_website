@@ -1,9 +1,8 @@
-import Header from "../Components/Header";
 
 const HomePage = () => {
    return (
-      <div className="">
-         <Header />
+      <div className="container">
+         content
       </div>
    );
 }
