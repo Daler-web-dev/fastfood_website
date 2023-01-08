@@ -1,12 +1,19 @@
 import Button from '../Components/children/Button';
 import Footer from '../Components/Footer';
 import Header from '../Components/Header';
+import ProductCard from '../Components/children/ProductCard';
+
 import bgMenu from '../resources/bg-menu.jpg'
 import carbonara from '../resources/carbonara.png'
 import tortellini from '../resources/tortellini.png'
 import ziti from '../resources/ziti.png'
-import kruosan from '../resources/kruosan.png'
 import user from '../resources/user.png'
+import burger from '../resources/burger2.jpg'
+import cafe from '../resources/cafe.jpg'
+import dessert from '../resources/dessert.jpg'
+import dessert2 from '../resources/dessert2.jpg'
+import kitchen from '../resources/kitchen.jpg'
+import steak from '../resources/steak.jpg'
 
 import { BsArrowLeft } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
@@ -46,105 +53,26 @@ const HomePage = () => {
                      <p className='text-center text-lg font-normal mt-8 text-[#75797F] max-lg:mt-5 max-lg:text-base'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
                   </div>
                   <div className="grid grid-cols-3 mt-[90px] max-lg:grid-cols-1 gap-5 px-6 max-lg:mt-16 max-md:grid-cols-2 max-[540px]:grid-cols-1">
-                     <div className="max-lg:flex max-md:block bg-white overflow-hidden rounded-[20px] drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
-                        <a href="#0" className='rounded-[20px] overflow-hidden'>
-                           <img className="rounded-t-lg" src={kruosan} alt="" />
-                        </a>
-                        <div className="p-5">
-                           <a href="#0">
-                              <h5 className="mb-2 text-2xl text-black max-md:text-xl">Dunkin' Munchkins</h5>
-                           </a>
-                           <p className="mb-3 font-normal text-base text-[#75797F] max-md:truncate max-sm:text-sm">But I must explain to you how all this mistaken idea of  will give you a complete account of the system</p>
-                           <div className="flex justify-between items-center">
-                              <span className='text-black font-bold'>$6.30</span>
-                              <Button />
-                           </div>
-                        </div>
-                     </div>
-
-                     <div className="max-lg:flex max-md:block bg-white overflow-hidden rounded-[20px] drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
-                        <a href="#0" className='rounded-[20px] overflow-hidden'>
-                           <img className="rounded-t-lg" src={kruosan} alt="" />
-                        </a>
-                        <div className="p-5">
-                           <a href="#0">
-                              <h5 className="mb-2 text-2xl text-black max-md:text-xl">Dunkin' Munchkins</h5>
-                           </a>
-                           <p className="mb-3 font-normal text-base text-[#75797F] max-md:truncate max-sm:text-sm">But I must explain to you how all this mistaken idea of  will give you a complete account of the system</p>
-                           <div className="flex justify-between items-center">
-                              <span className='text-black font-bold'>$6.30</span>
-                              <Button />
-                           </div>
-                        </div>
-                     </div>
-
-                     <div className="max-lg:flex max-md:block bg-white overflow-hidden rounded-[20px] drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
-                        <a href="#0" className='rounded-[20px] overflow-hidden'>
-                           <img className="rounded-t-lg" src={kruosan} alt="" />
-                        </a>
-                        <div className="p-5">
-                           <a href="#0">
-                              <h5 className="mb-2 text-2xl text-black max-md:text-xl">Dunkin' Munchkins</h5>
-                           </a>
-                           <p className="mb-3 font-normal text-base text-[#75797F] max-md:truncate max-sm:text-sm">But I must explain to you how all this mistaken idea of  will give you a complete account of the system</p>
-                           <div className="flex justify-between items-center">
-                              <span className='text-black font-bold'>$6.30</span>
-                              <Button />
-                           </div>
-                        </div>
-                     </div>
-
-                     <div className="max-lg:flex max-md:block bg-white overflow-hidden rounded-[20px] drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
-                        <a href="#0" className='rounded-[20px] overflow-hidden'>
-                           <img className="rounded-t-lg" src={kruosan} alt="" />
-                        </a>
-                        <div className="p-5">
-                           <a href="#0">
-                              <h5 className="mb-2 text-2xl text-black max-md:text-xl">Dunkin' Munchkins</h5>
-                           </a>
-                           <p className="mb-3 font-normal text-base text-[#75797F] max-md:truncate max-sm:text-sm">But I must explain to you how all this mistaken idea of  will give you a complete account of the system</p>
-                           <div className="flex justify-between items-center">
-                              <span className='text-black font-bold'>$6.30</span>
-                              <Button />
-                           </div>
-                        </div>
-                     </div>
-
-                     <div className="max-lg:flex max-md:block bg-white overflow-hidden rounded-[20px] drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
-                        <a href="#0" className='rounded-[20px] overflow-hidden'>
-                           <img className="rounded-t-lg" src={kruosan} alt="" />
-                        </a>
-                        <div className="p-5">
-                           <a href="#0">
-                              <h5 className="mb-2 text-2xl text-black max-md:text-xl">Dunkin' Munchkins</h5>
-                           </a>
-                           <p className="mb-3 font-normal text-base text-[#75797F] max-md:truncate max-sm:text-sm">But I must explain to you how all this mistaken idea of  will give you a complete account of the system</p>
-                           <div className="flex justify-between items-center">
-                              <span className='text-black font-bold'>$6.30</span>
-                              <Button />
-                           </div>
-                        </div>
-                     </div>
-
-                     <div className="max-lg:flex max-md:block bg-white overflow-hidden rounded-[20px] drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
-                        <a href="#0" className='rounded-[20px] overflow-hidden'>
-                           <img className="rounded-t-lg" src={kruosan} alt="" />
-                        </a>
-                        <div className="p-5">
-                           <a href="#0">
-                              <h5 className="mb-2 text-2xl text-black max-md:text-xl">Dunkin' Munchkins</h5>
-                           </a>
-                           <p className="mb-3 font-normal text-base text-[#75797F] max-md:truncate max-sm:text-sm">But I must explain to you how all this mistaken idea of  will give you a complete account of the system</p>
-                           <div className="flex justify-between items-center">
-                              <span className='text-black font-bold'>$6.30</span>
-                              <Button />
-                           </div>
-                        </div>
-                     </div>
+                     <ProductCard />
+                     <ProductCard />
+                     <ProductCard />
+                     <ProductCard />
+                     <ProductCard />
+                     <ProductCard />
                   </div>
                   <div className="flex justify-center mt-10 max-md:mt-5">
                      <Button />
                   </div>
+               </section>
+
+               <section className='grid grid-cols-3 grid-rows-1 gap-2 mt-24 max-xl:mt-20 max-lg:mt-16 max-md:mt-10'>
+                  <div className="row-span-1 col-span-1"><img className='object-cover max-w-full' src={burger} alt="burger" /></div>
+                  <div className="col-span-2"><img src={steak} alt="burger" /></div>
+                  <div className="row-span-1"><img src={cafe} alt="burger" /></div>
+                  <div className="text-black flex items-center justify-center"><Button/></div>
+                  <div className=""><img src={dessert2} alt="burger" /></div>
+                  <div className="col-span-2"><img src={kitchen} alt="burger" /></div>
+                  <div className="row-span-2"><img src={dessert} alt="burger" /></div>
                </section>
 
                <section className='mt-24 max-xl:mt-20 max-lg:mt-16 max-md:mt-10 text-black px-6'>
@@ -188,7 +116,6 @@ const HomePage = () => {
                      <button className='p-2 hover:bg-[#DF6751] border-[#DF6751] border rounded-full rotate-180'><BsArrowLeft size={20} /></button>
                   </div>
                </section>
-
 
             </div>
          </div>
