@@ -1,8 +1,20 @@
 import React from "react";
 import "./App.scss";
+import { Route, Routes } from "react-router-dom";
+
+import Layout from "./Layout/Layout";
+import AboutPage from "./Pages/AboutPage";
+import Menu from "./Pages/Menu";
 
 function App() {
-  return <div className="App"></div>;
+	return (
+		<Routes>
+			<Route path='/' element={<Layout />}>
+				<Route path="/about" element={<AboutPage />} />
+				<Route path="/menu" element={<Menu />} />
+			</Route>
+		</Routes>
+	)
 }
 
 export default App;
