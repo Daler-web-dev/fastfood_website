@@ -22,14 +22,14 @@ const HomePage = () => {
    return (
       <>
          <Header />
-         <div className="text-white overflow-hidden">
+         <div className="text-white overflow-hidden mt-28">
             <img className="absolute top-0 left-0 z-[-1] w-[100%]" src={bgMenu} alt="" />
             <div className="m-auto container">
                <section className='2xl:px-[200px] text-center mt-[150px] max-2xl:mt-[100px] max-2xl:px-[150px] max-xl:px-[100px] max-lg:px-16 max-lg:mt-[70px] max-md:mt-14 max-md:px-10 max-sm:px-6 max-sm:mt-7'>
                   <h1 className='font-bold 2xl:text-[80px] 2xl:leading-[110px] max-2xl:text-[60px] max-2xl:leading-[90px] max-xl:text-[50px] max-xl:leading-[60px] max-lg:text-[45px] max-lg:leading-[50px] max-md:text-3xl max-sm:text-2xl'>People who love to eat are always the best people.</h1>
                   <p className='text-[22px] mt-[60px] leading-8 text-gray-400 max-2xl:mt-[50px] max-lg:text-xl max-md:mt-8 max-md:text-base max-sm:text-sm max-sm:mt-5'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni aspernatur aut odit aut fugit, sed quia consequuntur magni dolores...</p>
                   <div className="flex items-center justify-center mt-[60px] gap-[35px] max-2xl:mt-10">
-                     <Link to="/about">
+                     <Link to="/menu">
                         <Button />
                      </Link>
                      <div className="flex">
@@ -115,8 +115,7 @@ const HomePage = () => {
                      <button className='p-2 hover:bg-[#DF6751] border-[#DF6751] border rounded-full'><BsArrowLeft size={20} /></button>
                      <button className='p-2 hover:bg-[#DF6751] border-[#DF6751] border rounded-full rotate-180'><BsArrowLeft size={20} /></button>
                   </div>
-               </section>
-
+               </section> 
             </div>
          </div>
          <Footer />
