@@ -5,7 +5,7 @@ import MyModal from '../MyModal';
 import Button from "./Button";
 
 const ProductCard = () => {
-   const [visible, setVisible] = useState(false)
+   const [visible, setVisible] = useState(false) 
 
    return (
       <>
