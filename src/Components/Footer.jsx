@@ -1,12 +1,11 @@
 const Footer = () => {
    return (
-      <footer className="flex justify-center p-4 bg-white sm:p-6 dark:bg-gray-900">
+      <footer className="flex justify-center p-4 px-6 bg-white sm:p-6 dark:bg-gray-900 mt-32 max-xl:mt-24 max-lg:mt-20 max-md:mt-10">
          <div className="container">
             <div className="lg:flex md:justify-between">
                <div className="mb-6 md:mb-0">
                   <a href="#1" className="flex items-center">
-                     <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="FlowBite Logo" />
-                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Foodgram</span>
                   </a>
                </div>
                <div className="grid grid-cols-4 max-lg:mt-5 max-md:grid-cols-3 gap-8 sm:gap-6 max-sm:grid-cols-2  lg:grid-cols-4">
@@ -49,6 +48,7 @@ const Footer = () => {
                         <div className="mb-6">
                            <input type="text" id="default-input" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                         </div>
+                        <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Leave a review</button>
                      </ul>
                   </div>
                </div>
