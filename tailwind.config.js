@@ -5,11 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {}, 
-    screens: {
-      '1l': '569px',
-      '2l': '761px',
-      '3l': '380px'
-    }
   },
   plugins: [],
 }
