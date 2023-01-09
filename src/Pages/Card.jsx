@@ -11,8 +11,8 @@ function Card() {
         </div>
       </div>
       <div className="flex w-full gap-5 flex-col lg:flex-row">
-        <div className="w-full bg-white border rounded-lg shadow-md p-3 dark:bg-gray-800 dark:border-gray-700">
-          <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="w-full bg-white border rounded-lg shadow-md p-3 ">
+          <ul role="list" className="divide-y divide-gray-200 ">
             <CardLine />
             <CardLine />
             <CardLine />
@@ -20,7 +20,7 @@ function Card() {
           </ul>
         </div>
         <div className="w-full flex flex-col gap-5 lg:w-1/2">
-          <div class="w-full p-4 bg-white border rounded-lg flex items-center flex-col gap-3 shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div class="w-full p-4 bg-white border rounded-lg flex items-center flex-col gap-3 shadow-md sm:p-8">
             <div className="w-full flex items-center justify-between">
               <p>Доставка</p>
               <p>Безплатная</p>

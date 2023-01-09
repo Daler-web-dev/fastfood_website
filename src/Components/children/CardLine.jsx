@@ -17,10 +17,10 @@ function CardLine() {
           <img className="lg:w-16 lg:h-16 w-12 h-12" src="/img/img1.svg" alt="Neilimage" />
         </div>
         <div className=" min-w-0 flex flex-col gap-2">
-          <p className="text-sm font-bold text-gray-900 truncate dark:text-white">
+          <p className="text-sm font-bold text-gray-900 truncate ">
             Мясная бомба
           </p>
-          <p className="text-base font-bold text-gray-900 dark:text-white ">
+          <p className="text-base font-bold text-gray-900">
             $320
           </p>
         </div>
