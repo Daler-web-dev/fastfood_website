@@ -6,6 +6,7 @@ import { FreeMode } from "swiper";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import Items from './Items';
+import Footer from '../Components/Footer';
 const Layout = () => {
     const arr = [
         {
@@ -89,6 +90,7 @@ const Layout = () => {
                 </Swiper>
             </div>
             <Outlet></Outlet>
+            <Footer/>
         </div>
     );
 }
