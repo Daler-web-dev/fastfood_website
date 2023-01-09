@@ -19,7 +19,7 @@ const ProductCard = ({ item, price }) => {
                <p className="mb-3 font-normal text-base text-[#75797F] max-md:truncate max-sm:text-sm">{item.body}</p>
                <div className="flex justify-between items-center w-full">
                   <span className='text-black font-bold'>{item.price}</span>
-                  <Button onClick={() => setVisible(true)} />
+                  <Button onClick={() => setVisible(true)}>Order Now</Button>
                </div>
             </div>
          </div>

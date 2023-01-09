@@ -35,7 +35,7 @@ const HomePage = () => {
                   <p className='text-[22px] mt-[60px] leading-8 text-gray-400 max-2xl:mt-[50px] max-lg:text-xl max-md:mt-8 max-md:text-base max-sm:text-sm max-sm:mt-5'>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni aspernatur aut odit aut fugit, sed quia consequuntur magni dolores...</p>
                   <div className="flex items-center justify-center mt-[60px] gap-[35px] max-2xl:mt-10">
                      <Link to="/menu">
-                        <Button />
+                        <Button>Explore our Menu</Button>
                      </Link>
                      <div className="flex">
                         <span className='scores'>★</span>
@@ -64,7 +64,7 @@ const HomePage = () => {
                   </div>
                   <div className="flex justify-center mt-10 max-md:mt-5">
                      <Link to="/menu">
-                        <Button />
+                        <Button>Explore our Menu</Button>
                      </Link>
                   </div>
                </section>
@@ -73,7 +73,7 @@ const HomePage = () => {
                   <div className="row-span-1 col-span-1"><img className='object-cover max-w-full' src={burger} alt="burger" /></div>
                   <div className="col-span-2"><img src={steak} alt="burger" /></div>
                   <div className="row-span-1"><img src={cafe} alt="burger" /></div>
-                  <div className="text-black flex items-center justify-center"><Link to="/menu"><Button /></Link></div>
+                  <div className="text-black flex items-center justify-center"><Link to="/menu"><Button>Explore our Menu</Button></Link></div>
                   <div className=""><img src={dessert2} alt="burger" /></div>
                   <div className="col-span-2"><img src={kitchen} alt="burger" /></div>
                   <div className="row-span-2"><img src={dessert} alt="burger" /></div>
