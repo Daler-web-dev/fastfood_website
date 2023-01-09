@@ -18,53 +18,11 @@ import bgcafe from '../resources/bgcafe.jpg'
 import { BsArrowLeft } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
 import Footer from '../Components/Footer';
-
-const arr = [
-   {
-      id: 1,
-      title: "Мясная бомба",
-      body: "512г",
-      price: "689₽",
-      img: "/images/photo.png"
-   },
-   {
-      id: 2,
-      title: "Мясная бомба",
-      body: "512г",
-      price: "689₽",
-      img: "/images/photo.png"
-   },
-   {
-      id: 3,
-      title: "Мясная бомба",
-      body: "512г",
-      price: "689₽",
-      img: "/images/photo.png"
-   },
-   {
-      id: 4,
-      title: "Мясная бомба",
-      body: "512г",
-      price: "689₽",
-      img: "/images/photo.png"
-   },
-   {
-      id: 5,
-      title: "Мясная бомба",
-      body: "512г",
-      price: "689₽",
-      img: "/images/photo.png"
-   },
-   {
-      id: 6,
-      title: "Мясная бомба",
-      body: "512г",
-      price: "689₽",
-      img: "/images/photo.png"
-   },
-]
+import { useSelector } from 'react-redux';
 
 const HomePage = () => {
+   const arr = useSelector(state => state.burgers.burgers)
+
    return (
       <>
          <Header />
@@ -80,11 +38,11 @@ const HomePage = () => {
                         <Button />
                      </Link>
                      <div className="flex">
-                        <span className='text-[#FE8B75] text-xl'>★</span>
-                        <span className='text-[#FE8B75] text-xl'>★</span>
-                        <span className='text-[#FE8B75] text-xl'>★</span>
-                        <span className='text-[#FE8B75] text-xl'>★</span>
-                        <span className='text-[#FE8B75] text-xl'>☆</span>
+                        <span className='scores'>★</span>
+                        <span className='scores'>★</span>
+                        <span className='scores'>★</span>
+                        <span className='scores'>★</span>
+                        <span className='scores'>☆</span>
                      </div>
                   </div>
                   <div className="relative flex justify-between mt-5 items-start max-xl:mt-0 max-md:mt-[-35px] max-sm:mt-0">
