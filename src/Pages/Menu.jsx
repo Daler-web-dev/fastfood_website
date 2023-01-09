@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductCard from '../Components/children/ProductCard'
 
- const Menu = () => {
+const Menu = () => {
 
     const arr = [
         {
@@ -55,13 +55,13 @@ import ProductCard from '../Components/children/ProductCard'
         }
     ]
 
-  return (
-    <div className='w-full flex flex-col items-center justify-center gap-10'>
-        <h1 className=' text-5xl'>Our menu</h1>
-        <div className="flex justify-center flex-wrap gap-8">
-            {arr.map(item => <ProductCard key={item.id} item={item}/>)}
+    return (
+        <div className='w-full flex flex-col items-center justify-center gap-10'>
+            <h1 className=' text-5xl'>Our menu</h1>
+            <div className="flex justify-center flex-wrap gap-8">
+                {arr.map(item => <ProductCard key={item.id} item={item} />)}
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 export default Menu

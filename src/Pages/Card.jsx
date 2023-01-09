@@ -1,5 +1,5 @@
 import React from "react";
-import CardChild from "../Components/CardChild/CardChild";
+import CardLine from "../Components/children/CardLine";
 
 function Card() {
   return (
@@ -12,14 +12,11 @@ function Card() {
       </div>
       <div className="flex w-full gap-5 flex-col lg:flex-row">
         <div className="w-full bg-white border rounded-lg shadow-md p-3 dark:bg-gray-800 dark:border-gray-700">
-          <ul
-            role="list"
-            className="divide-y divide-gray-200 dark:divide-gray-700"
-          >
-            <CardChild />
-            <CardChild />
-            <CardChild />
-            <CardChild />
+          <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
+            <CardLine />
+            <CardLine />
+            <CardLine />
+            <CardLine />
           </ul>
         </div>
         <div className="w-full flex flex-col gap-5 lg:w-1/2">

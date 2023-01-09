@@ -1,5 +1,4 @@
 import Button from '../Components/children/Button';
-import Footer from '../Components/Footer';
 import Header from '../Components/Header';
 import ProductCard from '../Components/children/ProductCard';
 
@@ -14,16 +13,64 @@ import dessert from '../resources/dessert.jpg'
 import dessert2 from '../resources/dessert2.jpg'
 import kitchen from '../resources/kitchen.jpg'
 import steak from '../resources/steak.jpg'
+import bgcafe from '../resources/bgcafe.jpg'
 
 import { BsArrowLeft } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
+import Footer from '../Components/Footer';
+
+const arr = [
+   {
+      id: 1,
+      title: "Мясная бомба",
+      body: "512г",
+      price: "689₽",
+      img: "/images/photo.png"
+   },
+   {
+      id: 2,
+      title: "Мясная бомба",
+      body: "512г",
+      price: "689₽",
+      img: "/images/photo.png"
+   },
+   {
+      id: 3,
+      title: "Мясная бомба",
+      body: "512г",
+      price: "689₽",
+      img: "/images/photo.png"
+   },
+   {
+      id: 4,
+      title: "Мясная бомба",
+      body: "512г",
+      price: "689₽",
+      img: "/images/photo.png"
+   },
+   {
+      id: 5,
+      title: "Мясная бомба",
+      body: "512г",
+      price: "689₽",
+      img: "/images/photo.png"
+   },
+   {
+      id: 6,
+      title: "Мясная бомба",
+      body: "512г",
+      price: "689₽",
+      img: "/images/photo.png"
+   },
+]
 
 const HomePage = () => {
    return (
       <>
          <Header />
          <div className="text-white overflow-hidden mt-28">
-            <img className="absolute top-0 left-0 z-[-1] w-[100%]" src={bgMenu} alt="" />
+            <img className="max-lg:hidden block absolute top-0 left-0 z-[-1] w-[100%]" src={bgMenu} alt="" />
+            <img className="absolute top-0 left-0 z-[-1] w-[100%] hidden max-lg:block" src={bgcafe} alt="" />
             <div className="m-auto container">
                <section className='2xl:px-[200px] text-center mt-[150px] max-2xl:mt-[100px] max-2xl:px-[150px] max-xl:px-[100px] max-lg:px-16 max-lg:mt-[70px] max-md:mt-14 max-md:px-10 max-sm:px-6 max-sm:mt-7'>
                   <h1 className='font-bold 2xl:text-[80px] 2xl:leading-[110px] max-2xl:text-[60px] max-2xl:leading-[90px] max-xl:text-[50px] max-xl:leading-[60px] max-lg:text-[45px] max-lg:leading-[50px] max-md:text-3xl max-sm:text-2xl'>People who love to eat are always the best people.</h1>
@@ -53,15 +100,14 @@ const HomePage = () => {
                      <p className='text-center text-lg font-normal mt-8 text-[#75797F] max-lg:mt-5 max-lg:text-base'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
                   </div>
                   <div className="grid grid-cols-3 mt-[90px] max-lg:grid-cols-1 gap-5 px-6 max-lg:mt-16 max-md:grid-cols-2 max-[540px]:grid-cols-1">
-                     <ProductCard />
-                     <ProductCard />
-                     <ProductCard />
-                     <ProductCard />
-                     <ProductCard />
-                     <ProductCard />
+                     {
+                        arr.map(item => <ProductCard key={item.id} item={item} />)
+                     }
                   </div>
                   <div className="flex justify-center mt-10 max-md:mt-5">
-                     <Button />
+                     <Link to="/menu">
+                        <Button />
+                     </Link>
                   </div>
                </section>
 
@@ -69,7 +115,7 @@ const HomePage = () => {
                   <div className="row-span-1 col-span-1"><img className='object-cover max-w-full' src={burger} alt="burger" /></div>
                   <div className="col-span-2"><img src={steak} alt="burger" /></div>
                   <div className="row-span-1"><img src={cafe} alt="burger" /></div>
-                  <div className="text-black flex items-center justify-center"><Button/></div>
+                  <div className="text-black flex items-center justify-center"><Link to="/menu"><Button /></Link></div>
                   <div className=""><img src={dessert2} alt="burger" /></div>
                   <div className="col-span-2"><img src={kitchen} alt="burger" /></div>
                   <div className="row-span-2"><img src={dessert} alt="burger" /></div>
@@ -115,7 +161,7 @@ const HomePage = () => {
                      <button className='p-2 hover:bg-[#DF6751] border-[#DF6751] border rounded-full'><BsArrowLeft size={20} /></button>
                      <button className='p-2 hover:bg-[#DF6751] border-[#DF6751] border rounded-full rotate-180'><BsArrowLeft size={20} /></button>
                   </div>
-               </section> 
+               </section>
             </div>
          </div>
          <Footer />
