@@ -1,7 +1,7 @@
 import React from "react";
 import CardLine from "../Components/children/CardLine";
 
-function Card() {
+function Cart() {
   return (
     <div className="mx-16">
       <div className="flex items-center gap-3 mb-6">
@@ -42,4 +42,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default Cart;
