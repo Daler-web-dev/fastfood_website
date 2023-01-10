@@ -55,7 +55,7 @@ const Layout = () => {
                     <img src="/Icons/logo.svg" alt="" />
                 </div>
                 <div className="flex items-center flex-col justify-center mt-0 md:mt-0 sm:flex-row sm:mt-[20px]">
-                    <img src="/Images/burger-img.svg" className=' w-[200px] 3:lw-[250px] md:w-[300px]' />
+                    <img src="/Images/burger-img.svg" className=' w-[200px] 3:lw-[250px] md:w-[300px]' alt='' />
                     <h1 className='text-4xl sm:text-5xl text-center text-white md:text-6xl'>Только самые <br /> <span className='text-[#FF5C00]'>сочные бургеры</span></h1>
                 </div>
             </div>
