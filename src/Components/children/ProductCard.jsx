@@ -9,9 +9,9 @@ const ProductCard = ({ item, price }) => {
 
    return (
       <>
-         <div className="max-lg:flex  max-md:block bg-white overflow-hidden rounded-[20px] drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
-            <a href="#0" className='rounded-[20px] overflow-hidden'>
-               <img className="rounded-t-lg w-full max-lg:object-cover" src={item.img} alt="" />
+         <div className="max-lg:flex  max-md:block bg-white overflow-hidden rounded-2xl drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
+            <a href="#0" className='rounded-2xl overflow-hidden max-lg:max-w-[210px] w-full'>
+               <img className="rounded-2xl  w-full" src={item.img} alt="" />
             </a>
             <div className="p-5 w-full">
                <a href="#0">

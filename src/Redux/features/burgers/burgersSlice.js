@@ -1,9 +1,8 @@
-import {
-    createSlice
-} from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    burgers: [{
+    burgers: [
+        {
             id: 1,
             title: "Мясная бомба",
             body: "512г",
@@ -47,7 +46,6 @@ const initialState = {
         }
     ]
 }
-
 
 export const burgersSlice = createSlice({
     name: 'burgers',
