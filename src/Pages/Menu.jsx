@@ -3,62 +3,11 @@ import { useSelector } from 'react-redux'
 import ProductCard from '../Components/children/ProductCard'
 
 const Menu = () => {
-
-    // const arr = [
-    //     {
-    //         id: 1,
-    //         title: "Мясная бомба",
-    //         body: "512г",
-    //         price: "689₽",
-    //         img: "/images/photo.png"
-    //     },
-    //     {
-    //         id: 2,
-    //         title: "Мясная бомба",
-    //         body: "512г",
-    //         price: "689₽",
-    //         img: "/images/photo.png"
-    //     },
-    //     {
-    //         id: 3,
-    //         title: "Мясная бомба",
-    //         body: "512г",
-    //         price: "689₽",
-    //         img: "/images/photo.png"
-    //     },
-    //     {
-    //         id: 4,
-    //         title: "Мясная бомба",
-    //         body: "512г",
-    //         price: "689₽",
-    //         img: "/images/photo.png"
-    //     },
-    //     {
-    //         id: 5,
-    //         title: "Мясная бомба",
-    //         body: "512г",
-    //         price: "689₽",
-    //         img: "/images/photo.png"
-    //     },
-    //     {
-    //         id: 6,
-    //         title: "Мясная бомба",
-    //         body: "512г",
-    //         price: "689₽",
-    //         img: "/images/photo.png"
-    //     },
-    //     {
-    //         id: 7,
-    //         title: "Мясная бомба",
-    //         body: "512г",
-    //         price: "689₽",
-    //         img: "/images/photo.png"
-    //     }
-    // ]
-
     const sousesArr = useSelector(state => state.souses.souses)
     const burgersArr = useSelector(state => state.burgers.burgers)
     const newArr = useSelector(state => state.desserts.desserts)
+    const pizzas = useSelector(state => state.pizzas.pizzas)
+    const salads = useSelector(state => state.salads.salads)
 
     return (
         <div className='w-full flex flex-col items-center justify-center gap-10'>
@@ -67,6 +16,8 @@ const Menu = () => {
                 {burgersArr.map(item => <ProductCard key={item.id} item={item} />)}
                 {newArr.map(item => <ProductCard key={item.id} item={item} />)}
                 {sousesArr.map(item => <ProductCard key={item.id} item={item} />)}
+                {pizzas.map(item => <ProductCard key={item.id} item={item} />)}
+                {salads.map(item => <ProductCard key={item.id} item={item} />)}
             </div>
         </div>
     )
