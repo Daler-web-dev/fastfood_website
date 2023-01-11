@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import MyModal from '../MyModal';
+import MyModal from './MyModal';
 
 import Button from "./Button";
+import ModalChild from './ModalChild';
 
 const ProductCard = ({ item, price }) => {
    const [visible, setVisible] = useState(false)
@@ -22,7 +23,9 @@ const ProductCard = ({ item, price }) => {
                </div>
             </div>
          </div>
-         <MyModal visible={visible} setVisible={setVisible}><h1 style={{ color: "black" }}>{item.title}</h1></MyModal>
+         <MyModal visible={visible} setVisible={setVisible}>
+            <ModalChild item={item}/>
+         </MyModal>
       </>
    );
 }
