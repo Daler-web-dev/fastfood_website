@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CardLine from "../Components/children/CardLine";
 
 function Cart() {
@@ -29,12 +30,14 @@ function Cart() {
               <p className="font-bold text-xl">Общая цена</p>
               <p className="font-bold text-xl">$320</p>
             </div>
-            <button
-              type="button"
-              class="w-[70%] sm:mt-5 text-white bg-[#F86310]  hover:bg-[#ff803b] ease-in duration-200 font-medium rounded-3xl text-xl px-5 py-3  text-center"
-            >
-              Продолжить
-            </button>
+            <Link to="/cart/review" className="w-full flex justify-center">
+              <button
+                type="button"
+                class="w-[70%] sm:mt-5 text-white bg-[#F86310]  hover:bg-[#ff803b] ease-in duration-200 font-medium rounded-3xl text-xl px-5 py-3  text-center"
+              >
+                Продолжить
+              </button>
+            </Link>
           </div>
         </div>
       </div>
