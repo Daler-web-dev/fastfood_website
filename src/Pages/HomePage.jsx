@@ -57,7 +57,7 @@ const HomePage = () => {
                      <h2 className='text-center text-[40px] leading-[53px] font-semibold text-black max-md:text-4xl max-sm:text-3xl'>Food of the Month</h2>
                      <p className='text-center text-lg font-normal mt-8 text-[#75797F] max-lg:mt-5 max-lg:text-base'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
                   </div>
-                  <div className="grid grid-cols-3 mt-[90px] max-lg:grid-cols-1 gap-5 px-6 max-lg:mt-16 max-md:grid-cols-2 max-[540px]:grid-cols-1">
+                  <div className="grid grid-cols-4 max-xl:grid-cols-3 mt-[90px] max-lg:grid-cols-1 gap-5 px-6 max-lg:mt-16 max-md:grid-cols-2 max-[540px]:grid-cols-1">
                      {
                         arr.map(item => <ProductCard key={item.id} item={item} />)
                      }

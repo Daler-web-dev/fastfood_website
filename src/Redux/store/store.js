@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import burgers from "../features/burgers/burgersSlice";
+import desserts from "../features/desserts/dessertsSlice";
 
 export const store = configureStore({
     reducer: {
@@ -8,7 +9,7 @@ export const store = configureStore({
         liquid: '',
         pizzas: '',
         souses: '',
-        desserts: '',
+        desserts: desserts,
         cart: ''
     }
 })
