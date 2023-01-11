@@ -5,10 +5,9 @@ import Button from "./Button";
 
 const ProductCard = ({ item, price }) => {
    const [visible, setVisible] = useState(false)
-
    return (
       <>
-         <div className="max-lg:flex  max-md:block bg-white overflow-hidden rounded-2xl drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
+         <div id={item.type} className="max-lg:flex  max-md:block bg-white overflow-hidden rounded-2xl drop-shadow-[0px_20px_30px_rgba(0,0,0,0.09)]">
             <a href="#0" className='rounded-2xl overflow-hidden max-lg:max-w-[210px] w-full'>
                <img className="rounded-2xl  w-full" src={item.img} alt="" />
             </a>

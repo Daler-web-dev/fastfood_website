@@ -11,39 +11,48 @@ const Layout = () => {
     const arr = [
         {
             name: 'Бургеры',
-            img: '/Icons/burger-icon.svg'
+            img: '/Icons/burger-icon.svg',
+            type: 'burger'
         },
         {
             name: 'Закуски',
-            img: '/Icons/snacks.svg'
+            img: '/Icons/snacks.svg',
+            type: 'snacks'
         },
         {
             name: 'Хот-доги',
-            img: '/Icons/xot-dog.svg'
+            img: '/Icons/xot-dog.svg',
+            type: 'xotdog'
         },
         {
             name: 'Комбо',
-            img: '/Icons/combo.svg'
+            img: '/Icons/combo.svg',
+            type: 'combo'
         },
         {
             name: 'Шаурма',
-            img: '/Icons/shaverma.svg'
+            img: '/Icons/shaverma.svg',
+            type: 'shaverma'
         },
         {
             name: 'Пицца',
-            img: '/Icons/pizza.svg'
+            img: '/Icons/pizza.svg',
+            type: 'pizza'
         },
         {
             name: 'Wok',
-            img: '/Icons/wok.svg'
+            img: '/Icons/wok.svg',
+            type: 'wok'
         },
         {
             name: 'Десерты',
-            img: '/Icons/desserts.svg'
+            img: '/Icons/desserts.svg',
+            type: 'desserts'
         },
         {
             name: 'Соусы',
-            img: '/Icons/sous.svg'
+            img: '/Icons/sous.svg',
+            type: 'souses'
         },
     ]
 
