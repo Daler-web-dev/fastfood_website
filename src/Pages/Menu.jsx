@@ -56,6 +56,7 @@ const Menu = () => {
         }
     ]
 
+    const sousesArr = useSelector(state => state.souses.souses)
     const newArr = useSelector(state => state.desserts.desserts)
 
     return (
@@ -64,6 +65,7 @@ const Menu = () => {
             <div className="container grid grid-cols-4 max-xl:grid-cols-3 mt-[90px] max-lg:grid-cols-1 gap-5 px-6 max-lg:mt-16 max-md:grid-cols-2 max-[540px]:grid-cols-1">
                 {arr.map(item => <ProductCard key={item.id} item={item} />)}
                 {newArr.map(item => <ProductCard key={item.id} item={item} />)}
+                {sousesArr.map(item => <ProductCard key={item.id} item={item} />)}
             </div>
         </div>
     )
