@@ -1,9 +1,25 @@
-import { configureStore } from "@reduxjs/toolkit";
+import {
+    configureStore
+} from "@reduxjs/toolkit";
+import storage from 'redux-persist/lib/storage';
+import {
+    persistReducer,
+    persistStore
+} from 'redux-persist';
 import burgers from "../features/burgers/burgersSlice";
 import desserts from "../features/desserts/dessertsSlice";
 import souses from "../features/souses/souses";
 import salads from "../features/salads/salads";
 import pizzas from "../features/pizzas/pizzas";
+import cartReducer from "../features/cart/cartSlice";
+
+
+const persistConfig = {
+    key: 'root',
+    storage,
+}
+
+const persistedReducer = persistReducer(persistConfig, cartReducer)
 
 export const store = configureStore({
     reducer: {
@@ -13,8 +29,8 @@ export const store = configureStore({
         pizzas: pizzas,
         souses: souses,
         desserts: desserts,
-        cart: ''
+        cart: persistedReducer
     }
 })
 
-export default store
+export const persistor = persistStore(store)
