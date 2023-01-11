@@ -75,4 +75,4 @@ export const liquidsSlice = createSlice({
     reducers:{}
 })
 
-export default liquidsSlice
+export default liquidsSlice.reducer
