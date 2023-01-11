@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState ={
-    liquid:[
+    liquids:[
         {
             id: 1,
             title: "Coca Cola",
