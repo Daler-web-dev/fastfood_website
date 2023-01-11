@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CardLine from "../Components/children/CardLine";
 
-function Card() {
+function Cart() {
   return (
     <div className="mx-16">
       <div className="flex items-center gap-3 mb-6">
@@ -11,8 +12,8 @@ function Card() {
         </div>
       </div>
       <div className="flex w-full gap-5 flex-col lg:flex-row">
-        <div className="w-full bg-white border rounded-lg shadow-md p-3 dark:bg-gray-800 dark:border-gray-700">
-          <ul role="list" className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="w-full bg-white border rounded-lg shadow-md p-3 ">
+          <ul role="list" className="divide-y divide-gray-200 ">
             <CardLine />
             <CardLine />
             <CardLine />
@@ -20,7 +21,7 @@ function Card() {
           </ul>
         </div>
         <div className="w-full flex flex-col gap-5 lg:w-1/2">
-          <div class="w-full p-4 bg-white border rounded-lg flex items-center flex-col gap-3 shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div class="w-full p-4 bg-white border rounded-lg flex items-center flex-col gap-3 shadow-md sm:p-8">
             <div className="w-full flex items-center justify-between">
               <p>Доставка</p>
               <p>Безплатная</p>
@@ -29,12 +30,14 @@ function Card() {
               <p className="font-bold text-xl">Общая цена</p>
               <p className="font-bold text-xl">$320</p>
             </div>
-            <button
-              type="button"
-              class="w-[70%] sm:mt-5 text-white bg-[#F86310]  hover:bg-[#ff803b] ease-in duration-200 font-medium rounded-3xl text-xl px-5 py-3  text-center"
-            >
-              Продолжить
-            </button>
+            <Link to="/cart/review" className="w-full flex justify-center">
+              <button
+                type="button"
+                class="w-[70%] sm:mt-5 text-white bg-[#F86310]  hover:bg-[#ff803b] ease-in duration-200 font-medium rounded-3xl text-xl px-5 py-3  text-center"
+              >
+                Продолжить
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -42,4 +45,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default Cart;
