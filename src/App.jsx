@@ -8,6 +8,7 @@ import Menu from "./Pages/Menu";
 import HomePage from "./Pages/HomePage";
 import Cart from "./Pages/Cart";
 import CartReview from "./Pages/CartReview";
+import ErrorNotFound from "./Pages/ErrorNotFound";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 				<Route path="/cart" element={<Cart/>} />
 				<Route path="/cart/review" element={<CartReview/>} />
 			</Route>
+			<Route path="/error" element={<ErrorNotFound/>} />
 		</Routes>
 	)
 }
