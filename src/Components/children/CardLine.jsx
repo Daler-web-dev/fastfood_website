@@ -11,7 +11,7 @@ function CardLine() {
   }
 
   return (
-    <li className="py-1 sm:py-3 flex items-center justify-between flex-col gap-4 sm:gap-0 sm:flex-row">
+    <li className="py-1 sm:py-3 flex items-center justify-between max-[405px]:flex-col gap-4 sm:gap-0 flex-row">
       <div className="flex items-center space-x-4">
         <div className="flex-shrink-0">
           <img className="lg:w-16 lg:h-16 w-12 h-12" src="/img/img1.svg" alt="Neilimage" />
