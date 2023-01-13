@@ -4,7 +4,7 @@ import Lottie from 'react-lottie';
 import cartAnimation from '../lotties/emptyCart.json';
 import CardLine from "../Components/children/CardLine";
 
-function Card() {
+function Cart() {
 	const cartData = useSelector((state) => state.cart.cart);
 
 	const defaultOptions = {
@@ -66,4 +66,4 @@ function Card() {
 	);
 }
 
-export default Card;
+export default Cart;

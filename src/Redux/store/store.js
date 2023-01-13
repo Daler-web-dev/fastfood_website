@@ -11,6 +11,7 @@ import desserts from "../features/desserts/dessertsSlice";
 import souses from "../features/souses/souses";
 import salads from "../features/salads/salads";
 import pizzas from "../features/pizzas/pizzas";
+import liquids from "../features/liquid/liquidSlice";
 import cartReducer from "../features/cart/cartSlice";
 
 
@@ -25,7 +26,7 @@ export const store = configureStore({
     reducer: {
         burgers: burgers,
         salads: salads,
-        liquid: '',
+        liquid: liquids,
         pizzas: pizzas,
         souses: souses,
         desserts: desserts,

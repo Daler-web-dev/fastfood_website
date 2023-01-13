@@ -8,6 +8,7 @@ const Menu = () => {
     const newArr = useSelector(state => state.desserts.desserts)
     const pizzas = useSelector(state => state.pizzas.pizzas)
     const salads = useSelector(state => state.salads.salads)
+    const liquids = useSelector(state => state.liquid.liquids)
 
     return (
         <div className='w-full flex flex-col items-center justify-center gap-10'>
@@ -18,6 +19,7 @@ const Menu = () => {
                 {sousesArr.map(item => <ProductCard key={item.id} item={item} />)}
                 {pizzas.map(item => <ProductCard key={item.id} item={item} />)}
                 {salads.map(item => <ProductCard key={item.id} item={item} />)}
+                {liquids.map(item => <ProductCard key={item.id} item={item} />)}
             </div>
         </div>
     )

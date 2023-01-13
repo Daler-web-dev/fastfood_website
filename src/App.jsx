@@ -5,8 +5,10 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import AboutPage from "./Pages/AboutPage";
 import Menu from "./Pages/Menu";
-import Card from "./Pages/Card";
 import HomePage from "./Pages/HomePage";
+import Cart from "./Pages/Cart";
+import CartReview from "./Pages/CartReview";
+import ErrorNotFound from "./Pages/ErrorNotFound";
 
 function App() {
 	return (
@@ -15,8 +17,10 @@ function App() {
 			<Route path='/' element={<Layout />}>
 				<Route path="/about" element={<AboutPage />} />
 				<Route path="/menu" element={<Menu />} />
-				<Route path="/card" element={<Card />} />
+				<Route path="/cart" element={<Cart/>} />
+				<Route path="/cart/review" element={<CartReview/>} />
 			</Route>
+			<Route path="/error" element={<ErrorNotFound/>} />
 		</Routes>
 	)
 }
