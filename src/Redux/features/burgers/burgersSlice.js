@@ -1,62 +1,41 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {
+    createSlice
+} from "@reduxjs/toolkit";
+import { getPizzas, removePizza } from "../pizzas/pizzaasThunk";
 
 const initialState = {
-    burgers: [
-        {
-            id: 1,
-            title: "Мясная бомба",
-            body: "512г",
-            price: "689₽",
-            img: "/images/photo.png",
-            type: 'burger'
-        },
-        {
-            id: 2,
-            title: "Мясная бомба",
-            body: "512г",
-            price: "689₽",
-            img: "/images/photo.png",
-            type: 'burger'
-        },
-        {
-            id: 3,
-            title: "Мясная бомба",
-            body: "512г",
-            price: "689₽",
-            img: "/images/photo.png",
-            type: 'burger'
-        },
-        {
-            id: 4,
-            title: "Мясная бомба",
-            body: "512г",
-            price: "689₽",
-            img: "/images/photo.png",
-            type: 'burger'
-        },
-        {
-            id: 5,
-            title: "Мясная бомба",
-            body: "512г",
-            price: "689₽",
-            img: "/images/photo.png",
-            type: 'burger'
-        },
-        {
-            id: 6,
-            title: "Мясная бомба",
-            body: "512г",
-            price: "689₽",
-            img: "/images/photo.png",
-            type: 'burger'
-        }
-    ]
+    status: "idle",
+    burgers: []
 }
 
 export const burgersSlice = createSlice({
     name: 'burgers',
     initialState,
-    reducers: {}
+    reducers: {},
+    extraReducers(builder) {
+        builder
+            .addCase(getPizzas.pending, (state, action) => {
+                state.status = "getting your burgers"
+            })
+            .addCase(getPizzas.fulfilled, (state, action) => {
+                state.status = "already got your burgers"
+                state.burgers = action.payload
+            })
+            .addCase(getPizzas.rejected, (state, action) => {
+                state.status = "budesh golodaty"
+            });
+        builder
+            .addCase(removePizza.pending, (state, action) => {
+                state.status = "removing your burgers"
+            })
+            .addCase(removePizza.fulfilled, (state, action) => {
+                state.status = "removed your burger"
+                state.burgers = state.burgers.filter((item) => item._id !== action.payload);
+            })
+            .addCase(removePizza.rejected, (state, action) => {
+                state.status = "error"
+            })
+    }
 })
 
 export default burgersSlice.reducer
