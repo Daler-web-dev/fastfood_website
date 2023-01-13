@@ -4,7 +4,7 @@ import CardLine from "../Components/children/CardLine";
 
 function Cart() {
   return (
-    <div className="mx-16">
+    <div className="mx-16 max-sm:mx-10">
       <div className="flex items-center gap-3 mb-6">
         <h1 className="text-[30px] lg:text-[40px]">Корзина</h1>
         <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-xl bg-[#F2F2F3] flex items-center justify-center">
@@ -21,7 +21,7 @@ function Cart() {
           </ul>
         </div>
         <div className="w-full flex flex-col gap-5 lg:w-1/2">
-          <div class="w-full p-4 bg-white border rounded-lg flex items-center flex-col gap-3 shadow-md sm:p-8">
+          <div className="w-full p-4 bg-white border rounded-lg flex items-center flex-col gap-3 shadow-md sm:p-8">
             <div className="w-full flex items-center justify-between">
               <p>Доставка</p>
               <p>Безплатная</p>
@@ -33,7 +33,7 @@ function Cart() {
             <Link to="/cart/review" className="w-full flex justify-center">
               <button
                 type="button"
-                class="w-[70%] sm:mt-5 text-white bg-[#F86310]  hover:bg-[#ff803b] ease-in duration-200 font-medium rounded-3xl text-xl px-5 py-3  text-center"
+                className="w-[70%] sm:mt-5 text-white bg-[#F86310]  hover:bg-[#ff803b] ease-in duration-200 font-medium rounded-3xl text-xl px-5 py-3  text-center"
               >
                 Продолжить
               </button>

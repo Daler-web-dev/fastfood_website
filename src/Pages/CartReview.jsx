@@ -10,7 +10,7 @@ function CartReview() {
   const [blockClick, setBlockClick] = useState(false);
 
   return (
-    <div className="mx-16">
+    <div className="mx-16 max-lg:mx-10 max-md:mx-6">
       <div className="flex items-center gap-3 mb-6">
         <h1 className="lg:text-4xl font-semibold text-2xl ">
           Оформление заказа
@@ -26,9 +26,9 @@ function CartReview() {
                 : "w-full shadow-md rounded-lg overflow-hidden h-[55px] bg-[#F2F2F2]"
             }
           >
-            <div className="flex items-center justify-between p-4 cursor-pointer">
+            <div className="flex items-center justify-between gap-3 p-4 cursor-pointer">
               <div className="flex items-center gap-5">
-                <p className="text-xl">Выбранные товары</p>
+                <p className="text-xl max-sm:text-base">Выбранные товары</p>
                 <div className="w-7 h-7 bg-[#F86310] flex justify-center items-center rounded-full">
                   <span className="font-bold">3</span>
                 </div>
@@ -48,55 +48,57 @@ function CartReview() {
             </ul>
             <Link to="/menu">
               <p className="text-center mb-2 text-[17px] text-[grey]">
-                Menyuga o'tish
+                Меню
               </p>
             </Link>
           </div>
-          <div className="w-full flex items-center justify-between shadow-md rounded-lg p-4 bg-[#FFCCD5]">
-            <div className="flex items-center gap-3">
-              <img src="/icons/location.svg" className="w-7 h-7" alt="" />
-              <p className="text-[red]">Выберите адрес</p>
-            </div>
-            <TbPencil size="22" color="red" />
-          </div>
-          <div className="w-full flex items-center justify-between shadow-md rounded-lg p-4 bg-[#EBF3F2]">
-            <div className="flex items-center gap-3">
-              <IoMdContact size="40" color="grey" />
-              <div className="flex flex-col items-start">
-                <p className="font-black">User</p>
-                <p className="font-black">+998 (90) 123-45-67</p>
+          <ul role="list" className="divide-y rounded-lg divide-gray-200">
+            <li className="w-full flex rounded-t-lg items-center justify-between shadow-md p-4 bg-[#FFCCD5]">
+              <div className="flex items-center gap-3">
+                <img src="/icons/location.svg" className="w-7 h-7" alt="" />
+                <p className="text-[red]">Выберите адрес</p>
               </div>
-            </div>
-            <TbPencil size="22" color="green" />
-          </div>
-          <div className="w-full flex items-center justify-between shadow-md rounded-lg p-4 bg-[#EBF3F2]">
-            <div className="flex items-center gap-3">
-              <BiTimeFive size="40" color="green" />
-              <div className="flex flex-col items-start">
-                <p className="font-bold text-[grey]">Время доставки</p>
-                <p className="font-black">Как можно быстрее</p>
+              <TbPencil size="22" color="red" />
+            </li>
+            <li className="w-full flex items-center justify-between shadow-md p-4 bg-[#EBF3F2]">
+              <div className="flex items-center gap-3">
+                <IoMdContact size="40" color="grey" />
+                <div className="flex flex-col items-start">
+                  <p className="font-black">User</p>
+                  <p className="font-black max-sm:text-sm">+998 (90) 123-45-67</p>
+                </div>
               </div>
-            </div>
-            <TbPencil size="22" color="green" />
-          </div>
-          <div className="w-full flex items-center justify-between shadow-md rounded-lg p-4 bg-[#EBF3F2]">
-            <div className="flex items-center gap-3">
-              <GiMoneyStack size="40" color="green" />
-              <div className="flex flex-col items-start">
-                <p className="font-bold text-[grey]">Способ оплаты</p>
-                <p className="font-black">Наличными (Без сдачи)</p>
+              <TbPencil size="22" color="green" />
+            </li>
+            <li className="w-full flex items-center justify-between shadow-md p-4 bg-[#EBF3F2]">
+              <div className="flex items-center gap-3">
+                <BiTimeFive size="40" color="green" />
+                <div className="flex flex-col items-start">
+                  <p className="font-bold text-[grey]">Время доставки</p>
+                  <p className="font-black max-sm:text-sm">Как можно быстрее</p>
+                </div>
               </div>
-            </div>
-            <TbPencil size="22" color="green" />
-          </div>
+              <TbPencil size="22" color="green" />
+            </li>
+            <li className="w-full flex items-center justify-between shadow-md p-4 rounded-b-lg bg-[#EBF3F2]">
+              <div className="flex items-center gap-3">
+                <GiMoneyStack size="40" color="green" />
+                <div className="flex flex-col items-start">
+                  <p className="font-bold text-[grey]">Способ оплаты</p>
+                  <p className="font-black max-sm:text-sm">Наличными (Без сдачи)</p>
+                </div>
+              </div>
+              <TbPencil size="22" color="green" />
+            </li>
+          </ul>
           <textarea
             rows="4"
-            class="block p-2.5 w-full text-lg text-gray-900 rounded-lg mt-5 border shadow-sm outline-none"
+            className="block p-2.5 w-full text-lg text-gray-900 rounded-lg mt-5 border shadow-sm outline-none"
             placeholder="Комментарий"
           ></textarea>
         </div>
         <div className="w-full flex flex-col gap-5 lg:w-1/2">
-          <div class="w-full p-4 bg-white border rounded-lg flex items-center flex-col gap-3 shadow-md sm:p-8">
+          <div className="w-full p-4 bg-white border rounded-lg flex items-center flex-col gap-3 shadow-md sm:p-8">
             <div className="w-full flex items-center justify-between">
               <p>Доставка</p>
               <p>Безплатная</p>
@@ -108,7 +110,7 @@ function CartReview() {
             <Link to="/cart/review" className="w-full flex justify-center">
               <button
                 type="button"
-                class="w-[70%] sm:mt-5 text-white bg-[#F86310]  hover:bg-[#ff803b] ease-in duration-200 font-medium rounded-3xl text-xl px-5 py-3  text-center"
+                className="w-[70%] sm:mt-5 text-white bg-[#F86310]  hover:bg-[#ff803b] ease-in duration-200 font-medium rounded-3xl text-xl px-5 py-3  text-center"
               >
                 Продолжить
               </button>
