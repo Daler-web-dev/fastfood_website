@@ -24,11 +24,26 @@ function Cart() {
           <div className="w-full p-4 bg-white border rounded-lg flex items-center flex-col gap-3 shadow-md sm:p-8">
             <div className="w-full flex items-center justify-between">
               <p>Доставка</p>
-              <p>Безплатная</p>
+              <p>Беcплатная</p>
+            </div>
+            <div className="w-full flex items-center justify-between">
+              <p>Кол-во товаров:</p>
+              <p>4</p>
+            </div>
+            <div className="w-full flex items-center justify-between">
+              <p>Промокод:</p>
+              <input type="text" name="promo" id="promo" placeholder="Введите промокод" className="ml-3"/>
+            </div>
+            <div className="w-full flex items-center justify-between">
+              <p>Скидка:</p>
+              <p>0%</p>
             </div>
             <div className="w-full flex items-center justify-between">
               <p className="font-bold text-xl">Общая цена</p>
               <p className="font-bold text-xl">$320</p>
+            </div>
+            <div>
+              <p>*Нажимая продолжить вы соглашаетесь с тем что не сможете отменить заказ, и оплатите его одним из способов, который выбрали/выберите*</p>
             </div>
             <Link to="/cart/review" className="w-full flex justify-center">
               <button
