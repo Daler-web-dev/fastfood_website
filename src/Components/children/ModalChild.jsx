@@ -29,8 +29,6 @@ const ModalChild = ({item}) => {
 
     const dispatch = useDispatch();
 
-
-    const priceOfOne = + item.price.split('₽')[0]
   return (
         <div className="flex flex-col items-start justify-between gap-7 text-black max-w-xl ">
             <h1 className=' text-3xl font-bold'>{item.title}</h1>
