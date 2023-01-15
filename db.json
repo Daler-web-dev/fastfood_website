@@ -1,0 +1,326 @@
+{
+  "salads": [
+    {
+      "id": 1,
+      "title": "Оливье",
+      "body": "220г",
+      "price": "349₽",
+      "img": "https://www.maggi.ru/data/images/recept/img640x500/recept_9986_99za.jpg",
+      "type": "salad"
+    },
+    {
+      "id": 2,
+      "title": "Цезарь",
+      "body": "220г",
+      "price": "389₽",
+      "img": "https://gotovim.uz/wp-content/uploads/2022/04/salat-cezar-1-e1638563059152.jpg",
+      "type": "salad"
+    },
+    {
+      "id": 3,
+      "title": "Ачичук",
+      "body": "220г",
+      "price": "269₽",
+      "img": "https://mtdata.ru/u16/photoAC2F/20143526660-0/original.jpg",
+      "type": "salad"
+    },
+    {
+      "id": 4,
+      "title": "Смак",
+      "body": "220г",
+      "price": "299₽",
+      "img": "http://sun9-54.userapi.com/impg/c857724/v857724945/1f9cb3/ISgGN8b178k.jpg?size=604x403&quality=96&sign=995302f6402c7c409c738b54d835150b&type=album",
+      "type": "salad"
+    },
+    {
+      "id": 5,
+      "title": "Салат с креветками и апельсином",
+      "body": "220г",
+      "price": "419₽",
+      "img": "https://www.gastronom.ru/binfiles/images/20170404/m2413223.jpg",
+      "type": "salad"
+    },
+    {
+      "id": 6,
+      "title": "Салат рукола с креветками",
+      "body": "220г",
+      "price": "399₽",
+      "img": "https://www.gastronom.ru/binfiles/images/00000202/m_00074500.jpg",
+      "type": "salad"
+    },
+    {
+      "id": 7,
+      "title": "Салат с лососем",
+      "body": "220г",
+      "price": "379₽",
+      "img": "https://www.gastronom.ru/binfiles/images/00000094/m_00104832.jpg",
+      "type": "salad"
+    },
+    {
+      "id": 8,
+      "title": "Салат с креветками, антоновкой и манго",
+      "body": "220г",
+      "price": "429₽",
+      "img": "https://www.gastronom.ru/binfiles/images/00000273/m_00093893.jpg",
+      "type": "salad"
+    },
+    {
+      "id": 9,
+      "title": "Зеленый салат с креветками и хурмой",
+      "body": "220г",
+      "price": "399₽",
+      "img": "https://www.gastronom.ru/binfiles/images/20181128/m55606da.jpg",
+      "type": "salad"
+    },
+    {
+      "id": 10,
+      "title": "Салат с тунцом",
+      "body": "220г",
+      "price": "459₽",
+      "img": "https://www.gastronom.ru/binfiles/images/00000115/m_00092769.jpg",
+      "type": "salad"
+    }
+  ],
+  "pizzas": [
+    {
+      "id": 1,
+      "title": "Классическая",
+      "body": "30см",
+      "price": "340₽",
+      "img": "/images/pizza-classic.jpg",
+      "type": "pizza"
+    },
+    {
+      "id": 3,
+      "title": "Куриная",
+      "body": "30см",
+      "price": "499₽",
+      "img": "/images/pizza-kuriniy.jpg",
+      "type": "pizza"
+    },
+    {
+      "id": 4,
+      "title": "Маргарита",
+      "body": "30см",
+      "price": "450₽",
+      "img": "/images/pizza-margarita.jpg",
+      "type": "pizza"
+    },
+    {
+      "id": 5,
+      "title": "Мясная",
+      "body": "30см",
+      "price": "549₽",
+      "img": "/images/pizza-myasnoy.jpg",
+      "type": "pizza"
+    },
+    {
+      "id": 6,
+      "title": "Пепперони",
+      "body": "30см",
+      "price": "689₽",
+      "img": "/images/pizza-peperoni.jpg",
+      "type": "pizza"
+    }
+  ],
+  "souses": [
+    {
+      "id": 1,
+      "title": "Фирменный соус",
+      "body": "70г",
+      "price": "190₽",
+      "img": "/images/cheese-souse.jpeg",
+      "type": "souses"
+    },
+    {
+      "id": 2,
+      "title": "Сырный соус",
+      "body": "50г",
+      "price": "200₽",
+      "img": "/images/cheese-souse2.webp",
+      "type": "souses"
+    },
+    {
+      "id": 3,
+      "title": "Барбекью соус",
+      "body": "51г",
+      "price": "210₽",
+      "img": "/images/barbeque-sous.webp",
+      "type": "souses"
+    },
+    {
+      "id": 4,
+      "title": "Чесночный соус",
+      "body": "50г",
+      "price": "210₽",
+      "img": "/images/onion-sous.jpeg",
+      "type": "souses"
+    }
+  ],
+  "liquids": [
+    {
+      "id": 1,
+      "title": "Coca Cola",
+      "body": "0,5 l",
+      "price": "689₽",
+      "img": "/img/coca_cola_0.5.jpg",
+      "type": "liquid"
+    },
+    {
+      "id": 2,
+      "title": "Coca Cola",
+      "body": "1,5 l",
+      "price": "989₽",
+      "img": "/img/cocacola_1.5.jpg",
+      "type": "liquid"
+    },
+    {
+      "id": 3,
+      "title": "Coca Cola",
+      "body": "1,5 l",
+      "price": "689₽",
+      "img": "/img/cocacola_1.5.jpg",
+      "type": "liquid"
+    },
+    {
+      "id": 4,
+      "title": "Coca Cola",
+      "body": "0,5 l",
+      "price": "689₽",
+      "img": "/img/coca_cola_0.5.jpg",
+      "type": "liquid"
+    },
+    {
+      "id": 5,
+      "title": "Coca Cola",
+      "body": "0,5 l",
+      "price": "689₽",
+      "img": "/img/coca_cola_0.5.jpg",
+      "type": "liquid"
+    },
+    {
+      "id": 6,
+      "title": "Coca Cola",
+      "body": "0,5 l",
+      "price": "689₽",
+      "img": "/img/coca_cola_0.5.jpg",
+      "type": "liquid"
+    },
+    {
+      "id": 7,
+      "title": "Coca Cola",
+      "body": "0,5 l",
+      "price": "689₽",
+      "img": "/img/coca_cola_0.5.jpg",
+      "type": "liquid"
+    },
+    {
+      "id": 8,
+      "title": "Coca Cola",
+      "body": "1,5 l",
+      "price": "689₽",
+      "img": "/img/coca_cola_0.5.jpg",
+      "type": "liquid"
+    }
+  ],
+  "desserts": [
+    {
+      "id": 1,
+      "title": "cupcakes",
+      "body": "100г",
+      "price": "5$",
+      "img": "/images/waffles.jpg",
+      "type": "desserts"
+    },
+    {
+      "id": 2,
+      "title": "cupcakes",
+      "body": "100г",
+      "price": "5$",
+      "img": "/images/waffles.jpg",
+      "type": "desserts"
+    },
+    {
+      "id": 3,
+      "title": "cupcakes",
+      "body": "100г",
+      "price": "5$",
+      "img": "/images/waffles.jpg",
+      "type": "desserts"
+    },
+    {
+      "id": 4,
+      "title": "cupcakes",
+      "body": "100г",
+      "price": "5$",
+      "img": "/images/waffles.jpg",
+      "type": "desserts"
+    },
+    {
+      "id": 5,
+      "title": "cupcakes",
+      "body": "100г",
+      "price": "5$",
+      "img": "/images/waffles.jpg",
+      "type": "desserts"
+    },
+    {
+      "id": 6,
+      "title": "cupcakes",
+      "body": "100г",
+      "price": "5$",
+      "img": "/images/waffles.jpg",
+      "type": "desserts"
+    }
+  ],
+  "burgers": [
+    {
+      "id": 1,
+      "title": "Мясная бомба",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 2,
+      "title": "Мясная бомба",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 3,
+      "title": "Мясная бомба",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 4,
+      "title": "Мясная бомба",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 5,
+      "title": "Мясная бомба",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 6,
+      "title": "Мясная бомба",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    }
+  ]
+}
