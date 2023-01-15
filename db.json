@@ -97,14 +97,6 @@
       "price": "549₽",
       "img": "/images/pizza-myasnoy.jpg",
       "type": "pizza"
-    },
-    {
-      "id": 6,
-      "title": "Пепперони",
-      "body": "30см",
-      "price": "689₽",
-      "img": "/images/pizza-peperoni.jpg",
-      "type": "pizza"
     }
   ],
   "souses": [
