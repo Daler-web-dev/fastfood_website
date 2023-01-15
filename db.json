@@ -83,27 +83,11 @@
   ],
   "pizzas": [
     {
-      "id": 1,
-      "title": "Классическая",
-      "body": "30см",
-      "price": "340₽",
-      "img": "/images/pizza-classic.jpg",
-      "type": "pizza"
-    },
-    {
       "id": 3,
       "title": "Куриная",
       "body": "30см",
       "price": "499₽",
       "img": "/images/pizza-kuriniy.jpg",
-      "type": "pizza"
-    },
-    {
-      "id": 4,
-      "title": "Маргарита",
-      "body": "30см",
-      "price": "450₽",
-      "img": "/images/pizza-margarita.jpg",
       "type": "pizza"
     },
     {

@@ -2,9 +2,11 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import ProductCard from '../Components/children/ProductCard'
 import { getPizzas } from '../Redux/features/pizzas/pizzaasThunk'
+import { getSouses } from '../Redux/features/souses/sousesThunk'
+// import { getSouses } from '../Redux/features/souses/sousesThunk'
 
 const Menu = () => {
-    // const sousesArr = useSelector(state => state.souses.souses)
+    const { souses, status2 } = useSelector(state => state.souses)
     const {burgers, status} = useSelector(state => state.burgers)
     const dispatch = useDispatch();
     // const newArr = useSelector(state => state.desserts.desserts)
@@ -17,6 +19,9 @@ const Menu = () => {
         if(burgers.length === 0) {
             dispatch(getPizzas())
         }
+        if(souses.length === 0) {
+            dispatch(getSouses())
+        }
 
     }, []);
 
@@ -27,6 +32,9 @@ const Menu = () => {
                 {
                     burgers.length == 0 ? <h1>{status}</h1> :
                     burgers.map(item => <ProductCard key={item.id} item={item} />)
+                }
+                {
+                    souses.map(item => <ProductCard key={item.id} item={item} />)
                 }
                 {/* {newArr.map(item => <ProductCard key={item.id} item={item} />)}
                 {sousesArr.map(item => <ProductCard key={item.id} item={item} />)}
