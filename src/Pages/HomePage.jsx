@@ -1,5 +1,5 @@
 import Button from '../Components/children/Button';
-import Header from '../Components/Header';
+// import Header from '../Components/Header';
 import ProductCard from '../Components/children/ProductCard';
 
 import bgMenu from '../resources/bg-menu.jpg'
@@ -17,7 +17,7 @@ import bgcafe from '../resources/bgcafe.jpg'
 
 import { BsArrowLeft } from 'react-icons/bs'
 import { Link } from 'react-router-dom';
-import Footer from '../Components/Footer';
+// import Footer from '../Components/Footer';
 import { useSelector } from 'react-redux';
 
 const HomePage = () => {
@@ -25,7 +25,7 @@ const HomePage = () => {
 
    return (
       <>
-         <Header />
+         {/* <Header /> */}
          <div className="text-white overflow-hidden mt-28">
             <img className="max-lg:hidden block absolute top-0 left-0 z-[-1] w-[100%]" src={bgMenu} alt="" />
             <img className="absolute top-0 left-0 z-[-1] w-[100%] hidden max-lg:block" src={bgcafe} alt="" />
@@ -122,7 +122,7 @@ const HomePage = () => {
                </section>
             </div>
          </div>
-         <Footer />
+         {/* <Footer /> */}
       </>
    );
 }

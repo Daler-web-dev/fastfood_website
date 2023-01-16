@@ -83,14 +83,6 @@
   ],
   "pizzas": [
     {
-      "id": 3,
-      "title": "Куриная",
-      "body": "30см",
-      "price": "499₽",
-      "img": "/images/pizza-kuriniy.jpg",
-      "type": "pizza"
-    },
-    {
       "id": 5,
       "title": "Мясная",
       "body": "30см",
@@ -260,7 +252,7 @@
   "burgers": [
     {
       "id": 1,
-      "title": "Мясная бомба",
+      "title": "Бургер кинг говно",
       "body": "512г",
       "price": "689₽",
       "img": "/images/photo.png",
@@ -268,7 +260,7 @@
     },
     {
       "id": 2,
-      "title": "Мясная бомба",
+      "title": "Бургер кинг говно",
       "body": "512г",
       "price": "689₽",
       "img": "/images/photo.png",
@@ -276,7 +268,7 @@
     },
     {
       "id": 3,
-      "title": "Мясная бомба",
+      "title": "Бургер кинг говно",
       "body": "512г",
       "price": "689₽",
       "img": "/images/photo.png",
@@ -284,7 +276,7 @@
     },
     {
       "id": 4,
-      "title": "Мясная бомба",
+      "title": "Бургер кинг говно",
       "body": "512г",
       "price": "689₽",
       "img": "/images/photo.png",
@@ -292,7 +284,7 @@
     },
     {
       "id": 5,
-      "title": "Мясная бомба",
+      "title": "Бургер кинг говно",
       "body": "512г",
       "price": "689₽",
       "img": "/images/photo.png",
@@ -300,7 +292,7 @@
     },
     {
       "id": 6,
-      "title": "Мясная бомба",
+      "title": "Бургер кинг говно",
       "body": "512г",
       "price": "689₽",
       "img": "/images/photo.png",
