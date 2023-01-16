@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import ProductCard from '../Components/children/ProductCard'
 import { getPizzas } from '../Redux/features/pizzas/pizzaasThunk'
 import { getSouses } from '../Redux/features/souses/sousesThunk'
-// import { getSouses } from '../Redux/features/souses/sousesThunk'
 
 const Menu = () => {
     const { souses, status2 } = useSelector(state => state.souses)
@@ -15,14 +14,12 @@ const Menu = () => {
     // const liquids = useSelector(state => state.liquid.liquids)
 
     useEffect(() => {
-
         if(burgers.length === 0) {
             dispatch(getPizzas())
         }
         if(souses.length === 0) {
             dispatch(getSouses())
         }
-
     }, []);
 
     return (
