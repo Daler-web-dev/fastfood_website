@@ -83,14 +83,6 @@
   ],
   "pizzas": [
     {
-      "id": 3,
-      "title": "Куриная",
-      "body": "30см",
-      "price": "499₽",
-      "img": "/images/pizza-kuriniy.jpg",
-      "type": "pizza"
-    },
-    {
       "id": 5,
       "title": "Мясная",
       "body": "30см",
@@ -223,6 +215,56 @@
       "price": "5$",
       "img": "/images/waffles.jpg",
       "type": "desserts"
+    }
+  ],
+  "burgers": [
+    {
+      "id": 1,
+      "title": "Бургер кинг говно",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 2,
+      "title": "Бургер кинг говно",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 3,
+      "title": "Бургер кинг говно",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 4,
+      "title": "Бургер кинг говно",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 5,
+      "title": "Бургер кинг говно",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
+    },
+    {
+      "id": 6,
+      "title": "Бургер кинг говно",
+      "body": "512г",
+      "price": "689₽",
+      "img": "/images/photo.png",
+      "type": "burger"
     }
   ]
 }
