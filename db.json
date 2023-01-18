@@ -135,14 +135,6 @@
   ],
   "liquids": [
     {
-      "id": 1,
-      "title": "Coca Cola",
-      "body": "0,5 l",
-      "price": "689₽",
-      "img": "/img/coca_cola_0.5.jpg",
-      "type": "liquid"
-    },
-    {
       "id": 2,
       "title": "Coca Cola",
       "body": "1,5 l",
@@ -209,14 +201,6 @@
       "type": "desserts"
     },
     {
-      "id": 2,
-      "title": "cupcakes",
-      "body": "100г",
-      "price": "5$",
-      "img": "/images/waffles.jpg",
-      "type": "desserts"
-    },
-    {
       "id": 3,
       "title": "cupcakes",
       "body": "100г",
@@ -234,14 +218,6 @@
     },
     {
       "id": 5,
-      "title": "cupcakes",
-      "body": "100г",
-      "price": "5$",
-      "img": "/images/waffles.jpg",
-      "type": "desserts"
-    },
-    {
-      "id": 6,
       "title": "cupcakes",
       "body": "100г",
       "price": "5$",
